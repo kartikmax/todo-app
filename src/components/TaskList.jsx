@@ -50,10 +50,23 @@ const TaskList = () => {
     <div>
       <ul>
         {tasks.map((task, index) => (
-          <li key={index}>
-            {task}
-            <Button onClick={() => handleEdit(index)}>Edit</Button>
-            <Button onClick={() => handleDelete(index)}>Delete</Button>
+          <li style={{ display: "flex" }} key={index}>
+            <div
+              style={{
+                flex: 1,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              {task}
+            </div>
+            <Button style={{ flex: 1 }} onClick={() => handleEdit(index)}>
+              Edit
+            </Button>
+            <Button style={{ flex: 1 }} onClick={() => handleDelete(index)}>
+              Delete
+            </Button>
           </li>
         ))}
       </ul>

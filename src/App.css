@@ -1,7 +1,12 @@
 .App {
   text-align: center;
   max-width: 600px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  font-family: "Tahoma", Cambria, Cochin;
+  border: 1px solid;
+  padding: 20px;
+  height: 90vh;
+  overflow-y: auto;
 }
 
 form {

@@ -31,9 +31,14 @@ const TaskInput = () => {
         label="Enter a new task"
         variant="outlined"
         fullWidth
-        sx={{ marginRight: 2 }}
+        sx={{ marginRight: 2, flex: 3 }}
       />
-      <Button type="submit" variant="contained" color="primary">
+      <Button
+        sx={{ flex: 1 }}
+        type="submit"
+        variant="contained"
+        color="primary"
+      >
         Add Task
       </Button>
     </Box>
